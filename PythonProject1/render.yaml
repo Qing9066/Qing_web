@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: Qing_research
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn net:app

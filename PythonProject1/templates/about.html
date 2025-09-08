@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>關於我</title>
+    <style>
+        body {
+            font-family: "微軟正黑體", sans-serif;
+            text-align: center;
+            background-color: #fefefe;
+        }
+        img {
+            margin-top: 30px;
+            border-radius: 12px;
+            width: 300px;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>👩 我的簡歷</h2>
+    <img src="{{ url_for('static', filename='resume.jpg') }}" alt="我的照片">
+    <p>
+你好，我是傅仰晴，畢業於國立台北科技大學電機工程系，目前就讀於國立陽明交通大學電信工程研究所，專注於通道編碼（channel coding）相關研究。<br><br>
+
+目前的研究主題聚焦於極化碼（Polar Codes），特別是設計具稀疏結構（sparse structure）的同位檢查矩陣（Parity-Check Matrix, PCM），並以訊息傳遞（Belief Propagation, BP）演算法進行解碼。我致力於結合圖論分析與編碼理論，優化解碼效能並降低錯誤率。<br><br>
+
+除了理論與實作並進的研究經驗，我也熱衷於以圖形化與結構性方式呈現複雜系統，並樂於跨領域學習與分享。未來希望將通訊編碼技術應用於5G/6G系統、低延遲傳輸或邊緣運算相關領域。
+</p>
+
+</body>
+</html>
